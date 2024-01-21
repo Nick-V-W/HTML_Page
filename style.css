@@ -1,0 +1,77 @@
+html {
+  background-color: black
+}
+
+#header {
+	color: black;
+	font-family: Tahoma, Helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    background-color: lightblue;
+}
+
+#bubble-1  {
+  margin: 20px;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: top;
+  width: 500px;
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+  background-color: lightblue;
+}
+
+#bubble-2  {
+  margin-left: -750px;
+  margin-right: 250px;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  width: 500px;
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+  background-color: orange;
+}
+
+#bubble-3  {
+  margin-left: -570px;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: bottom;
+  width: 500px;
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+  background-color: lightblue;
+}
+
+#img-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 40px;
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  padding: 10px 10px 10px 10px;
+  background-color: orange;
+}
+
+p label {
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  padding: 10px 10px 10px 10px;
+  background-color: lightblue;
+}
+
+p select {
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  padding: 10px 10px 10px 10px;
+  background-color: orange;
+}

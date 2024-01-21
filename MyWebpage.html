@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Nick V Wislocki HTML Page</title>
+<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>  -->
 </head>
 <body>
 <div style="text-align: center;">
-		<h1>Welcome to my HTML Page!</h1>
-        <hr>
-		<img src="Images\PicOfMe.jpg" id="Nick_W" alt="Nick W" width="300"
-			height="400" />
-	</div>
-	<div>
-		<h3 style="text-align: left;"></h3>
-		<p style="text-align: left;">Hello! I'm Nick W. You can see me in
-			the picture above. This html page is meant to show my portfolio of work, and skills I offer. </p>
-	</div>
+    <link rel="stylesheet" rel="noopener" href="style.css">
+    <h1 id="header">Welcome to my HTML Page!</h1>
+</div>
+<div align="center">
+    <h3 id="bubble-1" style="text-align: left;">Hello! I'm Nicholas Wislocki. You can see me
+		in the picture to the right. This html page is meant to show my portfolio
+	   	of work, and the skills I offer. This html page works best when used in
+	   	conjunction with the "style.css" file, but the CSS is not necessary to
+	   	navigate the page.</h3>
+	<h3 id="bubble-2" style="text-align: left;">If you want, you can directly check
+	   	out my projects in-depth at my GitHub page here.</h3>
+	<h3 id="bubble-3" style="text-align: left;">Or, you can scroll down to find
+		images, links, and descriptions for my projects. If you have any questions,
+		or would like to know more, you can always contact me at
+		wislocki.3@buckeyemail.osu.edu or nickvwislocki@gmail.com (either works!).
+	</h3>
+	<img id= "img-1" src="Images\PicOfMe.jpg" id="Nick_W" alt="Nick W"
+	   	width="300" height="400" />
+</div>
 	<div style="text-align: center;">
-		<p>
-			<a href="secondPage.html">Try this link!</a>
-		</p>
-		<h2>Projects I have worked on:</h2>
-	</div>
-	<div>
-		<ul>
-			<li></li>
-			<li>While I can legally drive small water-craft vehicles, it has
-				been a while since I have (amazing!)</li>
-			<li>I am left handed but not for everything (weird!)</li>
-			<li>I did not know how to spell my own middle name until middle
-				school (ok...)</li>
-			<li>I can play two instruments, the alto saxophone and the oboe,
-				but am not amazing at either (cool!)</li>
-		</ul>
-	</div>
+	<hr style="width:75%">
+	<p>
+	    <label for="project-select">Please select a project you would like
+	    to view:</label>
+        <select name="Project Select" id="project-select">
+            <option value="2dGame">2D Game</option>
+            <option value="Hackathon Entry">Hackathon Entry</option>
+            <option value="Calculator">Calculator</option>
+        </select>
+		<a href="test.html">Test</a>
+	</p>
+</div>
+<div>
+
+
+</div>
 </body>
 </html>
