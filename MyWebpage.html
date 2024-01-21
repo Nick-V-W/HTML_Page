@@ -3,45 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <title>Nick V Wislocki HTML Page</title>
-<!-- <script src="//code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>  -->
 </head>
 <body>
-<div style="text-align: center;">
-    <link rel="stylesheet" rel="noopener" href="style.css">
-    <h1 id="header">Welcome to my HTML Page!</h1>
-</div>
-<div align="center">
-    <h3 id="bubble-1" style="text-align: left;">Hello! I'm Nicholas Wislocki. You can see me
-		in the picture to the right. This html page is meant to show my portfolio
-	   	of work, and the skills I offer. This html page works best when used in
-	   	conjunction with the "style.css" file, but the CSS is not necessary to
-	   	navigate the page.</h3>
-	<h3 id="bubble-2" style="text-align: left;">If you want, you can directly check
-	   	out my projects in-depth at my GitHub page here.</h3>
-	<h3 id="bubble-3" style="text-align: left;">Or, you can scroll down to find
-		images, links, and descriptions for my projects. If you have any questions,
-		or would like to know more, you can always contact me at
-		wislocki.3@buckeyemail.osu.edu or nickvwislocki@gmail.com (either works!).
-	</h3>
-	<img id= "img-1" src="Images\PicOfMe.jpg" id="Nick_W" alt="Nick W"
-	   	width="300" height="400" />
-</div>
 	<div style="text-align: center;">
-	<hr style="width:75%">
-	<p>
-	    <label for="project-select">Please select a project you would like
-	    to view:</label>
-        <select name="Project Select" id="project-select">
-            <option value="2dGame">2D Game</option>
-            <option value="Hackathon Entry">Hackathon Entry</option>
-            <option value="Calculator">Calculator</option>
-        </select>
-		<a href="test.html">Test</a>
-	</p>
-</div>
-<div>
+	    <link rel="stylesheet" rel="noopener" href="style.css">
+	    <h1 id="header">Welcome to my HTML Page!</h1>
+	</div>
+	<div align="center">
+	   <h3 id="bubble-1" style="text-align: left;">Hello! I'm Nicholas
+	       Wislocki. You can see me  in the picture to the right. This html page
+	       is meant to show my portfolio of work, and the skills I offer. This
+	       html page works best when used in conjunction with the "style.css"
+	       file, but the CSS is not necessary to navigate the page.
+	   </h3>
+	   <h3 id="bubble-2" style="text-aling: left;">If you want, you can directly
+	       check out my projects in-depth at my GitHub page here:<a
+	       target="_blank" href="https://github.com/notverywise"><br>Github</a>
+	   </h3>
+	   <h3 id="bubble-3" style="text-align: left;">Or, you can scroll down to
+	       find images, links, and descriptions for my projects. If you have any
+	       questions, or would like to know more, you can always contact me at
+		   wislocki.3@buckeyemail.osu.edu or nickvwislocki@gmail.com (either
+		   works!).
+	   </h3>
+	   <img id= "img-1" src="Images\PicOfMe.jpg" id="Nick_W" alt="Nick W"
+	       width="300" height="400" />
+	</div>
+	<div style="text-align: center;">
+	   <hr style="width:75%">
+	   <p>
+	       <label for="project-select">Please select a project you would like
+	       to view:</label>
+	       <select name="Project Select" id="project-select"
+	           onchange="projects()">
+	           <option value=1>2D Game</option>
+	           <option value=2>Hackathon Entry</option>
+	           <option value=3>Calculator</option>
+	       </select>
+       </p>
+	</div>
+	<div id="platformBlurb" style="display: inline-block;">
+	   <h2>2D Platform Game -- <a target="_blank"
+	       href="https://github.com/notverywise/Calculator">Github Repo</a></h2>
+	   <p>This game was a project my friend and I developed during our senior
+	       year of high school. The screenshots on the right show the UI of the
+	       game. In the bottom left of the screenshots of the game, you will see
+	       a blue square. This square is controllable by the player. The goal of
+	       the game was to get the blue square all the way to the top of the
+	       screen. However, the following obstacles are in the way:</p>
+	   <ul>
+	       <li>Black Rectangles: The player can not pass through these. They act
+	           as walls and platforms guiding the player. Some of these
+	           platforms can move, either up and down, or left and right.</li>
+	       <li>Red Rectangles: If the player touches these, they are sent back
+	           to the start of the game. Conceptually, these act like lava and a
+	           dangerous hazard that must be avoided.</li>
+	       <li>Green Rectangles: These rectangles function similarly to the
+	           black rectangles, except that they can disappear. They are set on
+	           a timer to loop from an "appeared" state to a "disappeared"
+	           state, and their color changes throughout this loop.</li>
+	   </ul>
+	   <p>While developing this game, I was in charge creating the user
+	       interface of the game, the level structure, bounding the platforms,
+	       and performance optimization.</p>
+	</div>
 
+	<div id="platformPics" style="display: inline-flex;">
+	   <img id="startGame" src="Images\2DGameStart.png" alt="Starting screen for
+	       game" width="206" height="86" />
+	   <img id="game1" src="Images\2DGameScreenShot.png" alt="Example level for
+	       game" width="350" height="278"/>
+	   <img id="game2" src="Images\2DGameMove.png" alt="Example of platforms
+	       that moved or disappeared" width="350" height="278"/>
+	</div>
 
-</div>
+	<div id="hackathonBlurb" style="display: none;">
+
+	</div>
+
+	<div id="hackathonPics" style="display: none;">
+
+	</div>
+
+	<div id="calculatorBlurb" style="display: none;">
+
+	</div>
+
+	<div id="calculatorPics" style="display: none;">
+
+    </div>
+
+    <script>
+    function projects() {
+       var x = document.getElementById("project-select").value;
+       if (x == 1) {
+    	    var elemText = document.getElementById("platformBlurb");
+    	    elemText.style.display = "inline-block";
+    	    var elemPic = document.getElementById("platformPics");
+    	    elemPic.style.display = "inline-flex";
+            var elemText = document.getElementById("hackathonBlurb");
+            elemText.style.display = "none";
+            var elemPic = document.getElementById("hackathonPics");
+            elemPic.style.display = "none";
+            var elemText = document.getElementById("calculatorBlurb");
+            elemText.style.display = "none";
+            var elemPic = document.getElementById("calculatorPics");
+            elemPic.style.display = "none";
+       }
+       if (x == 2) {
+           var elemText = document.getElementById("platformBlurb");
+           elemText.style.display = "none";
+           var elemPic = document.getElementById("platformPics");
+           elemPic.style.display = "none";
+           var elemText = document.getElementById("hackathonBlurb");
+           elemText.style.display = "inline-block";
+           var elemPic = document.getElementById("hackathonPics");
+           elemPic.style.display = "inline-flex";
+           var elemText = document.getElementById("calculatorBlurb");
+           elemText.style.display = "none";
+           var elemPic = document.getElementById("calculatorPics");
+           elemPic.style.display = "none";
+       }
+       if (x == 3) {
+           var elemText = document.getElementById("platformBlurb");
+           elemText.style.display = "none";
+           var elemPic = document.getElementById("platformPics");
+           elemPic.style.display = "none";
+           var elemText = document.getElementById("hackathonBlurb");
+           elemText.style.display = "none";
+           var elemPic = document.getElementById("hackathonPics");
+           elemPic.style.display = "none";
+           var elemText = document.getElementById("calculatorBlurb");
+           elemText.style.display = "inline-block";
+           var elemPic = document.getElementById("calculatorPics");
+           elemPic.style.display = "inline-flex";
+       }
+}
+</script>
 </body>
 </html>
