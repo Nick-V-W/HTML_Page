@@ -93,6 +93,42 @@ p select {
   width: 750px;
 }
 
+#hackathonBlurb {
+  width: 700px;
+  text-align: left;
+  vertical-align: top;
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+  background-color: lightblue;
+}
+
+#hackathonPics {
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+  background-color: orange;
+  width: 750px;
+}
+
+#calculatorBlurb {
+  width: 700px;
+  text-align: left;
+  vertical-align: top;
+  color: black;
+  font-family: Tahoma, Helvetica, sans-serif;
+  border-radius: 25px;
+  padding: 10px 10px 10px 10px;
+  background-color: lightblue;
+}
+
+#calculatorPics {
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+  background-color: orange;
+  width: 750px;
+}
+
 #startGame {
   vertical-align: top;
   margin-left: 272px;
@@ -107,5 +143,22 @@ p select {
 
 #game2 {
   margin-top: 100px;
+}
+
+#calcOperation {
+  vertical-align: top;
+  margin-left: 200px;
+}
+
+#calcDecimal {
+  vertical-align: middle;
+  margin-left: -350px;
+  margin-top: 200px;
+}
+
+#calcFinal {
+  vertical-align: bottom;
+  margin-left: -350px;
+  margin-top: 400px;
 }
 
