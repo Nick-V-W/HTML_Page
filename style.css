@@ -146,19 +146,30 @@ p select {
 }
 
 #calcOperation {
-  vertical-align: top;
-  margin-left: 200px;
+  margin-left: 40px;
 }
 
 #calcDecimal {
-  vertical-align: middle;
-  margin-left: -350px;
-  margin-top: 200px;
+  margin-top: 210px;
+  margin-left: -230px;
 }
 
 #calcFinal {
-  vertical-align: bottom;
-  margin-left: -350px;
   margin-top: 400px;
+  margin-left: -220px;
+}
+
+#dungeonStart {
+  margin-left: 50px;
+}
+
+#dungeonOptions {
+  margin-top: 280px;
+  margin-left: -470px;
+}
+
+#dungeonMarkers {
+  margin-top: 540px;
+  margin-left: -600px;
 }
 
